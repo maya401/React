@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Images } from "./typage/donnees";
+<<<<<<< HEAD
 import { GiFastForwardButton } from "react-icons/gi";
 import { GiFastBackwardButton } from "react-icons/gi";
+=======
+>>>>>>> b2f2c71 (correction)
 
 export default function Temoignage() {
   const [index, setIndex] = useState(0);
@@ -31,30 +34,48 @@ export default function Temoignage() {
     <div className="relative w-1/2">
       <img src={temoignages.url} alt={temoignages.alt} className="w-[400px] object-cover relative"/>
       
+<<<<<<< HEAD
         {/* <button
+=======
+        <button
+>>>>>>> b2f2c71 (correction)
         className="bg-blue-700 text-white px-4 py-2 rounded-md cursor-pointer top-40 absolute "
         onClick={Precedent} 
       >
         precedent
+<<<<<<< HEAD
       </button> */}
       <GiFastBackwardButton className="size-8 text-gray-100 top-40 absolute"
                onClick={Precedent} />
       
       {/* <button
+=======
+      </button>
+      
+      <button
+>>>>>>> b2f2c71 (correction)
         className="bg-blue-700 text-white px-4 py-2 rounded-md cursor-pointer top-40 absolute right-51"
         onClick={handleClick}
       >
         Suivant
+<<<<<<< HEAD
       </button> */}
       <GiFastForwardButton 
        className="size-8 text-gray-100  top-40 absolute right-51"
       onClick={handleClick}
        />
+=======
+      </button>
+>>>>>>> b2f2c71 (correction)
 
       <div className=" px-30 py-17 rounded-lg bg-white absolute top-70 left-24 shadow-lg shadow-gray-600">
         <span className="bg-orange-800 rounded-lg  px-2 py-20 absolute top-0 left-0 "></span>
 
+<<<<<<< HEAD
         <p>" teste {temoignages.temoignage} "</p>
+=======
+        <p>" {temoignages.temoignage} "</p>
+>>>>>>> b2f2c71 (correction)
 
       </div>
     </div>

@@ -31,6 +31,7 @@ export default function Header() {
               ))}
             </ul>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <a href="/login">
             <Button
               className="px-8 py-3 bg-white rounded-full cursor-pointer hover:scale-125 transition duration-700 "
@@ -41,16 +42,29 @@ export default function Header() {
 
             <a href="/inscription">
 =======
+=======
+            <a href="/login">
+>>>>>>> b2f2c71 (correction)
             <Button
               className="px-8 py-3 bg-white rounded-full cursor-pointer hover:scale-125 transition duration-700 "
               text="Login"
+              
             />
+<<<<<<< HEAD
 >>>>>>> 8a160b9 (tp react)
+=======
+            </a>
+
+            <a href="/inscription">
+>>>>>>> b2f2c71 (correction)
             <Button
               className="bg-[#F48C06] rounded-full px-5 py-3 cursor-pointer hover:scale-125 transition duration-700"
               text=" Sign Up"
             />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b2f2c71 (correction)
             </a>
           </nav>
         </div>
