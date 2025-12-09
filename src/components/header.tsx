@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { NavLink, Outlet } from "react-router-dom";
+=======
+import { NavLink } from "react-router-dom";
+>>>>>>> 8a160b9 (tp react)
 import Button from "./buttons";
 import type { MenuItem } from "./typage/types";
 
@@ -26,6 +30,7 @@ export default function Header() {
                 </li>
               ))}
             </ul>
+<<<<<<< HEAD
             <a href="/login">
             <Button
               className="px-8 py-3 bg-white rounded-full cursor-pointer hover:scale-125 transition duration-700 "
@@ -35,14 +40,25 @@ export default function Header() {
             </a>
 
             <a href="/inscription">
+=======
+            <Button
+              className="px-8 py-3 bg-white rounded-full cursor-pointer hover:scale-125 transition duration-700 "
+              text="Login"
+            />
+>>>>>>> 8a160b9 (tp react)
             <Button
               className="bg-[#F48C06] rounded-full px-5 py-3 cursor-pointer hover:scale-125 transition duration-700"
               text=" Sign Up"
             />
+<<<<<<< HEAD
             </a>
           </nav>
         </div>
         <Outlet/>
+=======
+          </nav>
+        </div>
+>>>>>>> 8a160b9 (tp react)
       </section>
     </>
   );

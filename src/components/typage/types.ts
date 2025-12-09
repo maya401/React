@@ -4,10 +4,6 @@ export interface MenuItem {
 }
 
 export interface Type {
-  src: string;
-  alt: string;
-}
-
 export interface TypeSection {
   titre: string;
   sousTitre: string;
