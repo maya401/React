@@ -18,7 +18,7 @@ export default function HeroSection() {
             text="Join for free " />
             <div className="flex items-center gap-5">
                 <div className="bg-white px-2 py-2 rounded-full">  <FaPlay className="text-2xl text-blue-500  "/></div>
-                 <span className="font-bold text-2xl">Watch how it works</span> 
+                 <span className="font-bold text-2xl">Watch how it works loremmmm</span> 
             </div>
            
         </div>
