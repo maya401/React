@@ -40,4 +40,17 @@ export interface CardProps {
   temoignage:string
  }
 
+  export interface blogType{
+  //  id: number
+    tag: string;
+    title: string;
+    description: string;
+    src: string
+ }
+
+ export interface sidebarType{
+  icon:React.ReactNode;
+  name: string
+ }
+
   

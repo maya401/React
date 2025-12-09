@@ -4,18 +4,18 @@ import CareerPage from "./components/pages/career";
 import BlogPage from "./components/pages/blogs";
 import AboutPage from "./components/pages/about";
 import HomePage from "./components/pages/home";
-import Header from "./components/header";
+// import Header from "./components/header";
 import DetailServices from "./components/pages/details";
 import LoginPage from "./components/pages/authentification/login";
 import SignUpPage from "./components/pages/authentification/inscription";
-import Pagedashboard from "./components/pages/dashbord/dashbord";
+import PageDashboard from "./components/pages/dashbord/dashbord";
 // import DetailServices from "./components/pages/details";
 
 function App() {
   return (
     <BrowserRouter>
       {/*Navigation */}
-      <Header />
+      
 
       {/* Routes */}
       <Routes>
@@ -39,7 +39,7 @@ function App() {
       </Routes>
 
       <Routes>
-        <Route path="/dashboard" element={<Pagedashboard />} />
+        <Route path="/dashboard" element={<PageDashboard />} />
 
       </Routes>  
 

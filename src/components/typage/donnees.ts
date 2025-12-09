@@ -1,7 +1,7 @@
+import type { ImagesTypes } from "./types";
 
 
-export const Images = [
-
+export const Images: ImagesTypes[]=[
 {
     url : "https://i.imgur.com/ZF6s192m.jpg" ,
     alt: "image1",
@@ -27,6 +27,4 @@ export const Images = [
     alt: "image5",
     temoignage: "j'ai adoré"
 }
-
-
 ]

@@ -26,14 +26,20 @@ export default function Header() {
                 </li>
               ))}
             </ul>
+            <a href="/login">
             <Button
               className="px-8 py-3 bg-white rounded-full cursor-pointer hover:scale-125 transition duration-700 "
               text="Login"
+              
             />
+            </a>
+
+            <a href="/inscription">
             <Button
               className="bg-[#F48C06] rounded-full px-5 py-3 cursor-pointer hover:scale-125 transition duration-700"
               text=" Sign Up"
             />
+            </a>
           </nav>
         </div>
       </section>

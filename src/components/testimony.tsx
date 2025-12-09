@@ -1,6 +1,7 @@
 import Button from "./buttons";
 import DivPartie from "./partie";
-import { Images } from "./typage/donnees";
+import Temoignage from "./Temoingange";
+// import { Images } from "./typage/donnees";
 
 
 export default function Testimony() {
@@ -42,9 +43,7 @@ export default function Testimony() {
               </div>
             </div>
 
-            <div className="relative">
-                <img src={Images.url} alt={Images.alt} />
-            </div>
+            <Temoignage/>
           </div>
           </>
     </div>
