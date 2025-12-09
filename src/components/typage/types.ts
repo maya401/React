@@ -3,7 +3,6 @@ export interface MenuItem {
   link: string;
 }
 
-export interface Type {
 export interface TypeSection {
   titre: string;
   sousTitre: string;
