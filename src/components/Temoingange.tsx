@@ -48,13 +48,13 @@ export default function Temoignage() {
       </button> */}
       <GiFastForwardButton 
        className="size-8 text-gray-100  top-40 absolute right-51"
-               onClick={handleClick}
+      onClick={handleClick}
        />
 
       <div className=" px-30 py-17 rounded-lg bg-white absolute top-70 left-24 shadow-lg shadow-gray-600">
         <span className="bg-orange-800 rounded-lg  px-2 py-20 absolute top-0 left-0 "></span>
 
-        <p>" {temoignages.temoignage} "</p>
+        <p>" teste {temoignages.temoignage} "</p>
 
       </div>
     </div>
