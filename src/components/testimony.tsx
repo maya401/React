@@ -2,24 +2,18 @@ import Button from "./buttons";
 import DivPartie from "./partie";
 import Temoignage from "./Temoingange";
 // import { Images } from "./typage/donnees";
+ //flex items-center justify-center gap-5 mt-20 ml-14 container
+           
 
 
 export default function Testimony() {
   return (
-    <div>
+    <div className="">
        <>
-          {/* <div className="w-full  flex justify-center items-center">
-              <Button
-              className="px-5 py-2 rounded-full bg-transparent border-2 border-orange-300 text-orange-500 mt-16 transition transform hover:scale-110  "
-              text="See more features"
-            />
-          </div> */}
-      
-          <div className="flex items-center gap-5 mt-20 ml-14">
-           
+          
+          <div className="container flex flex-col mt-20 items-center lg:flex-row">
             <div className="flex justify-between">
               
-      
               <div className=" flex flex-col justify-between gap-10">
                   <div className="flex items-center gap-9">
                       <span className="border w-[70px] border-gray-300"></span>

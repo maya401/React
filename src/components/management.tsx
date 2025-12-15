@@ -3,7 +3,7 @@ import DivPartie from "./partie";
 
 export default function Management() {
   return (
-    <div className="flex items-center justify-between container gap-6 mt-20">
+    <div className="flex  flex-col items-center justify-between container gap-6 mt-20 lg:flex-row">
          <div  className="w-1/2">
            <DivPartie
             

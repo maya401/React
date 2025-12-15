@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Button from "./buttons";
 import type { MenuItem } from "./typage/types";
 
@@ -6,7 +6,7 @@ const menuItems: MenuItem[] = [
   { name: "Home", link: "/" },
   { name: "Career", link: "/Career" },
   { name: "Blogs", link: "/Blog" },
-  { name: "About Us", link: "/About Us" },
+  { name: "About Us", link: "/AboutUs" },
 ];
 export default function Header() {
   return (
@@ -42,6 +42,7 @@ export default function Header() {
             </a>
           </nav>
         </div>
+        <Outlet/>
       </section>
     </>
   );

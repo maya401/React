@@ -1,17 +1,31 @@
 import React, { useState } from "react";
+import Button from "../../buttons";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("test@gmail.com");
   const [password, setPassword] = useState("");
+  const [checkPassword, setCheckpassword] = useState('');
+  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log("email:", email);
-    console.log("password:", password);
+    if(password === checkPassword){
+      alert('Mots de passe validés !');
+       alert("Connexion réussie !");
+       window.location.href = "/dashboard";
+    }else {
+      alert("mot de pass incorrect")
+    }
 
-    alert("Connexion réussie !");
-    window.location.href = "/dashboard";
+    const user = {
+      email: email,
+      password : password
+    }
+
+    localStorage.setItem("users", JSON.stringify(user))
+
+   
   };
   return (
     <div className="bg-purple-600 flex items-center justify-center h-screen  w-full">
@@ -44,6 +58,20 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              
+            />
+
+             <label className="block text-sm font-medium text-gray-700">
+              Confirmez votre mot de pass
+            </label>
+            <input
+              type="password"
+              className="mt-2 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500"
+              placeholder="confirmez votre mot de passe"
+              value={checkPassword}
+              onChange={(e) => setCheckpassword(e.target.value) }
+              required
+             
             />
           </div>
           <button
@@ -54,6 +82,11 @@ export default function LoginPage() {
           </button>
           
         </form>
+
+          <div className="flex mt-5 gap-6">
+          <p>Pas de compte ?  </p>
+        <Button className="border-b-2 text-purple-600" text=" S'inscrire" link="/inscription"/>
+        </div>
     
       </div>
     </div>

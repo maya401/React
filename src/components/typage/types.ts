@@ -40,12 +40,13 @@ export interface CardProps {
   temoignage:string
  }
 
-  export interface blogType{
-  //  id: number
-    tag: string;
+  export interface PostType{
+   id: number
+    // tag: string;
     title: string;
-    description: string;
-    src: string
+    body: string;
+    // src: string;
+    // link:string
  }
 
  export interface sidebarType{

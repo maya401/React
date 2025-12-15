@@ -11,7 +11,7 @@ export default function Features() {
       />
     </div>
 
-    <div className="flex flex-col items-center gap-5 mt-20 container">
+    <div className="flex flex-col lg:flex-row items-center gap-5 mt-20 container">
      
       <div className="flex justify-between">
         <div>

@@ -7,8 +7,7 @@ interface buttonProps {
 export default function Button ({text, className, link} : buttonProps){
 return(
     <button className={` ${className}`}>
-        {text}
-    {link}
+        <a href={link}> {text}</a>
     </button>
 );
 

@@ -7,14 +7,26 @@ export default function SignUpPage() {
   const [nom, setNom] = useState("");
   const [telephone, setTelephone] = useState("");
 
+
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    localStorage.setItem("email", email);
-    localStorage.setItem("password", password);
-    localStorage.setItem("prenom", prenom);
-    localStorage.setItem("nom", nom);
-    localStorage.setItem("telephone", telephone);
+
+    // localStorage.setItem("email", email);
+    // localStorage.setItem("password", password);
+    // localStorage.setItem("prenom", prenom);
+    // localStorage.setItem("nom", nom);
+    // localStorage.setItem("telephone", telephone);
+     
+    const user = {
+      email: email,
+      password: password,
+      prenom: prenom,
+      nom: nom,
+      telephone: telephone
+    }
+    localStorage.setItem("user", JSON.stringify(user))
 
     alert("Connexion réussie !");
     window.location.href = "/login";

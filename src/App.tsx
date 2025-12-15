@@ -9,6 +9,10 @@ import DetailServices from "./components/pages/details";
 import LoginPage from "./components/pages/authentification/login";
 import SignUpPage from "./components/pages/authentification/inscription";
 import PageDashboard from "./components/pages/dashbord/dashbord";
+import Sidebar from "./components/pages/dashbord/SideBar";
+import SettingPage from "./components/pages/dashbord/Settings";
+import CalendarPage from "./components/pages/dashbord/Calendar";
+import ProduitPage from "./components/pages/dashbord/Produit";
 // import DetailServices from "./components/pages/details";
 
 function App() {
@@ -19,10 +23,12 @@ function App() {
 
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/Career" element={<CareerPage />} />
+        <Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/Career" element={<CareerPage />} />
+        </Route>
       </Routes>
 
       <Routes>
@@ -39,8 +45,13 @@ function App() {
       </Routes>
 
       <Routes>
-        <Route path="/dashboard" element={<PageDashboard />} />
-
+        <Route path="/dashboard" element={<Sidebar />} >
+          <Route index element={<PageDashboard />} />
+          <Route path="setting" element={<SettingPage />} />
+          <Route path="calendar" element={<CalendarPage />} />
+          <Route path="produits" element={<ProduitPage />} />
+          
+        </Route> 
       </Routes>  
 
     </BrowserRouter>
