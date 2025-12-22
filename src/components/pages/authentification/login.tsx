@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../../buttons";
+import { toast } from "sonner";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("test@gmail.com");
@@ -11,8 +12,7 @@ export default function LoginPage() {
     e.preventDefault();
 
     if(password === checkPassword){
-      alert('Mots de passe validés !');
-       alert("Connexion réussie !");
+      toast.success('Mots de passe validés !')
        window.location.href = "/dashboard";
     }else {
       alert("mot de pass incorrect")

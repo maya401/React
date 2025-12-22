@@ -36,8 +36,10 @@ export interface CardProps {
 
  export interface ImagesTypes{
   url:string;
-  alt:string;
-  temoignage:string
+  // alt:string;
+  // temoignage:string
+  title: string;
+  id:number;
  }
 
   export interface PostType{
@@ -45,7 +47,7 @@ export interface CardProps {
     // tag: string;
     title: string;
     body: string;
-    // src: string;
+    src ?: string;
     // link:string
  }
 
@@ -53,5 +55,13 @@ export interface CardProps {
   icon:React.ReactNode;
   name: string
  }
+export interface CommentType{
+   id: number
+   name: string;
+   body: string;
+   
+   
+ }
+
 
   

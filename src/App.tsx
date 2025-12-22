@@ -13,14 +13,14 @@ import Sidebar from "./components/pages/dashbord/SideBar";
 import SettingPage from "./components/pages/dashbord/Settings";
 import CalendarPage from "./components/pages/dashbord/Calendar";
 import ProduitPage from "./components/pages/dashbord/Produit";
-// import DetailServices from "./components/pages/details";
+// import { Toaster } from 'sonner'
 
 function App() {
   return (
     <BrowserRouter>
       {/*Navigation */}
       
-
+      
       {/* Routes */}
       <Routes>
         <Route>
@@ -31,6 +31,7 @@ function App() {
         </Route>
       </Routes>
 
+       
       <Routes>
         <Route path="/Career/:service" element={<DetailServices />} />
       </Routes>
@@ -54,6 +55,7 @@ function App() {
         </Route> 
       </Routes>  
 
+        {/* <Toaster  position="bottom-right" Rich Colors Success/> */}
     </BrowserRouter>
   );
 }
